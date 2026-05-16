@@ -17,4 +17,6 @@ No se efectua ningun cambio con respecto a los colores.
 9. ReactDOM los inserta dentro de los div vacíos del HTML
 10. Se muestran los componentes en la página
 
+Ejecutar o abrir index_actualizado.html con extension "open with a live server" para ver todo sin problemas.
+
 
