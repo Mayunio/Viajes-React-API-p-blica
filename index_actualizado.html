@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sur de Chile | Destinos y paquetes turísticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="styles_actualizado.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <div class="logo">Sur de Chile</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#prueba-social">Opiniones</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="tag">1. Atracción</p>
+        <h1>Escápate por un día a los paisajes más increíbles del sur de Chile</h1>
+        <p>
+          Descubre paquetes ida y vuelta diseñados para vivir una experiencia visual, cómoda y memorable en destinos como
+          <strong>Torres del Paine, Puerto Varas, Chiloé, Pucón y Valdivia</strong>.
+        </p>
+        <div class="hero-buttons">
+          <a href="#paquetes" class="btn btn-primary">Reservar ahora</a>
+          <a href="#beneficios" class="btn btn-secondary">Ver beneficios</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <p class="card-step">Viaje destacado</p>
+        <h3>Torres del Paine Full Day</h3>
+        <ul>
+          <li>Salida y regreso el mismo día</li>
+          <li>Guía acompañante durante el recorrido</li>
+          <li>Paradas panorámicas incluidas</li>
+          <li>Ideal para una escapada rápida</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section benefits" id="beneficios">
+      <div class="section-title centered">
+        <p class="mini-title">2. Interés</p>
+        <h2>Beneficios que hacen más fácil decidir tu próximo viaje</h2>
+        <p class="section-subtext">
+          La landing ahora guía mejor al usuario: primero capta atención, luego explica beneficios, después genera confianza y finalmente lleva a la acción.
+        </p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <span class="benefit-number">01</span>
+          <h3>Ida y vuelta en un día</h3>
+          <p>No necesitas planificar alojamiento. Sales, disfrutas y vuelves el mismo día.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-number">02</span>
+          <h3>Destinos top del sur</h3>
+          <p>Incluye lugares altamente atractivos y reconocidos por sus paisajes y experiencia turística.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-number">03</span>
+          <h3>Compra más clara</h3>
+          <p>La información está ordenada para que el usuario entienda rápido qué incluye cada paquete.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-number">04</span>
+          <h3>Experiencia visual más profesional</h3>
+          <p>La propuesta transmite más confianza gracias a una mejor jerarquía, color y llamados a la acción.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section destinations" id="destinos">
+      <div class="section-title">
+        <p class="mini-title">Destinos destacados</p>
+        <h2>Lugares que convierten una escapada en una experiencia inolvidable</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-image torres"></div>
+          <div class="card-content">
+            <h3>Torres del Paine</h3>
+            <div class="react-weather-root" data-destino="Torres del Paine"></div>
+            <p>El destino más icónico de la Patagonia chilena, ideal para quienes buscan impacto visual y naturaleza a gran escala.</p>
+            <span class="badge">Patagonia</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image puertovaras"></div>
+          <div class="card-content">
+            <h3>Puerto Varas</h3>
+            <div class="react-weather-root" data-destino="Puerto Varas"></div>
+            <p>Ciudad encantadora con lago, volcanes y una atmósfera sureña perfecta para una escapada relajada.</p>
+            <span class="badge">Lagos y volcanes</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image chiloe"></div>
+          <div class="card-content">
+            <h3>Chiloé</h3>
+            <div class="react-weather-root" data-destino="Chiloé"></div>
+            <p>Tradición, arquitectura patrimonial y gastronomía local en una experiencia distinta y muy recordable.</p>
+            <span class="badge">Cultura y tradición</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image pucon"></div>
+          <div class="card-content">
+            <h3>Pucón</h3>
+            <div class="react-weather-root" data-destino="Pucón"></div>
+            <p>Un destino que mezcla aventura, energía y paisajes volcánicos con mucho atractivo para viajeros activos.</p>
+            <span class="badge">Aventura</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image valdivia"></div>
+          <div class="card-content">
+            <h3>Valdivia</h3>
+            <div class="react-weather-root" data-destino="Valdivia"></div>
+            <p>Ideal para quienes buscan un viaje más tranquilo, con ríos, feria local y naturaleza integrada a la ciudad.</p>
+            <span class="badge">Ríos y naturaleza</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section social-proof" id="prueba-social">
+      <div class="section-title centered">
+        <p class="mini-title">3. Deseo</p>
+        <h2>Prueba social para generar confianza antes de reservar</h2>
+        <p class="section-subtext">Estas opiniones ayudan a reforzar el deseo de compra antes de mostrar el CTA principal.</p>
+      </div>
+
+      <div class="social-grid">
+        <article class="testimonial-card featured-testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“La experiencia a Torres del Paine fue el paquete más completo. Todo estaba claro, se veía profesional y reservar fue muy simple.”</p>
+          <strong>Camila R.</strong>
+          <span>Viajera de Santiago</span>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“Me gustó que el viaje fuera ida y vuelta en el día. Se siente práctico y la página da confianza desde el primer vistazo.”</p>
+          <strong>Javier M.</strong>
+          <span>Escapada a Puerto Varas</span>
+        </article>
+
+        <article class="testimonial-card stats-card">
+          <h3>+1.200</h3>
+          <p>personas interesadas en escapadas Full Day</p>
+          <h3>95%</h3>
+          <p>de satisfacción visual con la propuesta</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section packages" id="paquetes">
+      <div class="section-title centered">
+        <p class="mini-title">4. Acción</p>
+        <h2>Elige tu paquete y da el siguiente paso</h2>
+        <p class="section-subtext">El color amarillo queda reservado para los botones principales y para captar la atención en la conversión.</p>
+      </div>
+
+      <div class="package-grid">
+        <article class="package-card featured">
+          <div class="package-top">
+            <p class="package-label">Más solicitado</p>
+            <h3>Torres del Paine Full Day</h3>
+            <p class="package-subtitle">Salida temprana + regreso en la noche</p>
+          </div>
+          <div class="price-row">
+            <span class="price">$89.990</span>
+            <span class="per">por persona</span>
+          </div>
+          <ul class="package-list">
+            <li><strong>Horario:</strong> 06:00 a 18:00 hrs aprox.</li>
+            <li>Transporte ida y vuelta</li>
+            <li>Paradas panorámicas</li>
+            <li>Tiempo libre para fotos</li>
+            <li>Guía acompañante</li>
+          </ul>
+          <button class="package-btn" data-package="Torres del Paine Full Day">Reservar paquete</button>
+        </article>
+
+        <article class="package-card">
+          <div class="package-top">
+            <p class="package-label">Recomendado</p>
+            <h3>Puerto Varas Express</h3>
+            <p class="package-subtitle">Lago, ciudad y vista al volcán</p>
+          </div>
+          <div class="price-row">
+            <span class="price">$54.990</span>
+            <span class="per">por persona</span>
+          </div>
+          <ul class="package-list">
+            <li><strong>Horario:</strong> 06:00 a 18:00 hrs aprox.</li>
+            <li>Viaje ida y vuelta en el día</li>
+            <li>Recorrido por costanera</li>
+            <li>Tiempo para almuerzo</li>
+            <li>Paradas fotográficas</li>
+          </ul>
+          <button class="package-btn" data-package="Puerto Varas Express">Reservar paquete</button>
+        </article>
+
+        <article class="package-card">
+          <div class="package-top">
+            <p class="package-label">Cultural</p>
+            <h3>Chiloé Tradición Day Tour</h3>
+            <p class="package-subtitle">Palafitos, ferias y esencia chilota</p>
+          </div>
+          <div class="price-row">
+            <span class="price">$59.990</span>
+            <span class="per">por persona</span>
+          </div>
+          <ul class="package-list">
+            <li><strong>Horario:</strong> 06:00 a 18:00 hrs aprox.</li>
+            <li>Traslado ida y vuelta</li>
+            <li>Visita a puntos icónicos</li>
+            <li>Tiempo libre para compras</li>
+            <li>Ruta gastronómica sugerida</li>
+          </ul>
+          <button class="package-btn" data-package="Chiloé Tradición Day Tour">Reservar paquete</button>
+        </article>
+
+        <article class="package-card">
+          <div class="package-top">
+            <p class="package-label">Aventura</p>
+            <h3>Pucón Aventura 1 Día</h3>
+            <p class="package-subtitle">Paisajes volcánicos y energía sureña</p>
+          </div>
+          <div class="price-row">
+            <span class="price">$64.990</span>
+            <span class="per">por persona</span>
+          </div>
+          <ul class="package-list">
+            <li><strong>Horario:</strong> 06:00 a 18:00 hrs aprox.</li>
+            <li>Transporte ida y vuelta</li>
+            <li>Paradas estratégicas</li>
+            <li>Visita al centro de Pucón</li>
+            <li>Orientación turística</li>
+          </ul>
+          <button class="package-btn" data-package="Pucón Aventura 1 Día">Reservar paquete</button>
+        </article>
+
+        <article class="package-card">
+          <div class="package-top">
+            <p class="package-label">Natural</p>
+            <h3>Valdivia Río y Ciudad</h3>
+            <p class="package-subtitle">Una escapada relajada y visual</p>
+          </div>
+          <div class="price-row">
+            <span class="price">$52.990</span>
+            <span class="per">por persona</span>
+          </div>
+          <ul class="package-list">
+            <li><strong>Horario:</strong> 06:00 a 18:00 hrs aprox.</li>
+            <li>Viaje ida y vuelta</li>
+            <li>Recorrido urbano sugerido</li>
+            <li>Tiempo para feria local</li>
+            <li>Paseo breve por costanera</li>
+          </ul>
+          <button class="package-btn" data-package="Valdivia Río y Ciudad">Reservar paquete</button>
+        </article>
+      </div>
+
+      <div class="final-cta">
+        <div>
+          <p class="mini-title">CTA principal</p>
+          <h2>Reserva hoy y transforma una visita rápida en una experiencia inolvidable</h2>
+          <p>La interfaz ahora usa verde oscuro para confianza, verde claro para beneficios y amarillo para los puntos de conversión.</p>
+        </div>
+        <a href="#inicio" class="btn btn-primary">Quiero mi viaje</a>
+      </div>
+    </section>
+
+    <!-- Nueva sección: Carrito y Reservas -->
+    <section class="section cart-reservation-section" id="carrito">
+      <div class="section-title centered">
+        <p class="mini-title">5. Confirma tu viaje</p>
+        <h2>Carrito y Reservas</h2>
+        <p class="section-subtext">Revisa los paquetes seleccionados y asegura tu cupo completando tus datos.</p>
+      </div>
+
+      <div class="cart-container">
+        <div class="cart-details">
+          <div class="cart-header">
+            <h3>Tu Selección</h3>
+            <span class="bird-icon">🕊️</span>
+          </div>
+          <div id="cart-items" class="cart-items">
+            <!-- Items dynamically added here -->
+          </div>
+          <div class="cart-summary">
+            <h4>Total: <span id="cart-total">$0</span></h4>
+          </div>
+
+          <div class="inventory-section">
+            <h3>Reservas Recientes</h3>
+            <div id="inventory-list" class="inventory-list">
+              <!-- Inventory items dynamically added here -->
+            </div>
+          </div>
+        </div>
+
+        <div class="reservation-form">
+          <h3>Datos de Reserva</h3>
+          <form id="reserva-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+              <span class="error-msg" id="error-nombre"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="rut">RUT</label>
+              <input type="text" id="rut" name="rut" placeholder="Ej. 12345678-9" required>
+              <span class="error-msg" id="error-rut"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+              <span class="error-msg" id="error-email"></span>
+            </div>
+
+            <div class="form-group row-group">
+              <div class="half-width">
+                <label for="personas">Cant. Personas</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" value="1" required>
+                <span class="error-msg" id="error-personas"></span>
+              </div>
+
+              <div class="half-width">
+                <label for="fecha">Fecha de Reserva</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <span class="error-msg" id="error-fecha"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="paquete-select">Destino preferido (Select)</label>
+              <select id="paquete-select" name="paquete-select" required>
+                <option value="">-- Selecciona un paquete --</option>
+                <option value="Torres del Paine Full Day">Torres del Paine Full Day</option>
+                <option value="Puerto Varas Express">Puerto Varas Express</option>
+                <option value="Chiloé Tradición Day Tour">Chiloé Tradición Day Tour</option>
+                <option value="Pucón Aventura 1 Día">Pucón Aventura 1 Día</option>
+                <option value="Valdivia Río y Ciudad">Valdivia Río y Ciudad</option>
+              </select>
+              <span class="error-msg" id="error-select"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Confirmar Reserva</button>
+          </form>
+          <div id="form-success" class="form-success hidden">¡Reserva realizada con éxito! Nos pondremos en contacto pronto.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nueva sección: Posts/Comentarios -->
+    <section class="section posts-section" id="experiencias">
+      <div id="react-posts-root"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Landing page de turismo del sur de Chile • Estructura AIDA + nueva psicología visual</p>
+  </footer>
+
+  <div class="toast" id="toast">Paquete seleccionado correctamente</div>
+
+  <script src="script_actualizado.js"></script>
+  <script type="text/babel" src="react_components.jsx"></script>
+</body>
+</html>

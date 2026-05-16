@@ -1,0 +1,54 @@
+“Actúa como un diseñador UX/UI y desarrollador frontend senior.
+Toma una landing page de turismo existente y escálala a un nivel más comercial agregando una sección de paquetes turísticos ida y vuelta por un día.
+Requisitos técnicos y de diseño:
+
+Crear sección ‘Paquetes turísticos’ con cards destacadas
+Incluir precios, beneficios y etiquetas (ej: destacado, recomendado)
+Destacar visualmente un paquete principal (Torres del Paine)
+Incluir botones CTA (‘Reservar paquete’)
+Implementar interacción en JavaScript (feedback visual tipo toast o mensaje emergente)
+Mantener coherencia de diseño con el resto de la página
+Usar sombras, gradientes, bordes redondeados y jerarquía visual clara
+Mantener código limpio, modular y escalable
+Separar en index.html, styles.css y script.js
+Diseño completamente responsive
+Estilo similar a landing pages modernas de agencias de viajes”
+
+Necesito que a esa página web se le agregue un carrito de compras , dependiendo del destino.
+El tipo de carrito lo dejo a tu criterio, pero debe ser simple y no tan complicado.
+También necesito que Se haga efectivo la reserva de horas que ya esta propuesta en la página web, para asi no tener problemas con las compras y estas se superpongan.
+La reserva de horas debe ser con al menos un día de anticipación.
+Ahora puedes modificar si quieres la pagina web pero debes tener estos criterios para hacerlo:
+Formulario HTML con al menos 3 campos (texto, email/número, select) + validaciones avanzadas en JS (expresiones regulares, campos obligatorios, sanitización).
+Manipulación del DOM para mostrar/actualizar/eliminar datos almacenados en un arreglo de objetos.
+Implementación de funciones modulares y reutilizables (por ej: renderizarLista, validarEntrada, agregarItem).
+Uso de buenas prácticas de seguridad: evitar innerHTML peligroso, usar textContent o createElement, escapar datos dinámicos.
+
+Ahora veamos que puedes hacer, sorpréndeme.
+
+Necesito una misma persona no pueda hacer más de una reserva de paquetes el mismo día, y si lo hace este diga que no se puede porque ya tiene reserva ese día.
+Para poder saber si ya tiene reserva para ese día ,en los datos de reserva este debe agregar el Rut.
+
+necesito que en la selección de paquetes en el cuadro llamado “tu selección”, solo se pueda agregar solo uno.
+
+Ahora necesito que, en el recuadro de tu selección, abajo de los paquetes de compra aparezca un registro o inventario que deje claro que ese día ya alguien hizo una reserva especifica mostrando la fecha de reserva. y nombre parcial de la persona que hizo esta reserva sin mostrar su identidad. por ejemplo, si Christopher Tapia hizo la reserva que aparezca Ch"#$"#$ " (nombre) T"#$(apellido).
+
+Actúa como experto React o ingeniero en React. 
+Muestre lista en grid con Bootstrap 5, manteniendo los colores de la actual pagina web e Implementa operaciones: agregar post local, editar, eliminar, persistir en Local Storage. Incluye validación de campos vacíos y manejo de errores con fetch. Dame el código con buenas prácticas de seguridad."
+
+Quiero que abajo del  nombre de los destinos turisticas de mi pagina web aparezcan componentes React (elemento que se creara) en el cual mas delante  tendra que aparecer de modo interactivo el clima de los destinos turisticos.
+Me explico mejor, en ese elemento react creado , tendra que aparecer el clima de hasta 3 dias  hacia adelante, por ejemplo si compro la promocion un dia lunes, me deberia aparecer el clima del dia lunes, martes y miercoles.
+Obviamente para hacer eso, es obligatorio conectarce con una Api que sea capaz de monitoriar el tiempo de los destinos turisticos que promociona la web.
+
+esta bien pero necesito que sea mas claro
+
+React + Hooks
+useState, useEffect, componentes funcionales. Creación con npx create-react-app o Vite.
+
+CRUD + Local Storage
+Agregar, editar, eliminar elementos. Persistencia automática, validación de integridad.
+
+Consumo API
+Fetch o Axios. Manejo de errores, loading states, sugerencias de IA para resiliencia.
+
+necesito todo mas claro y recuerda que me debe aparecer el clima de los destinos tres dias a futuro, condando el mismo dia de la compra de paquetes de viaje.
