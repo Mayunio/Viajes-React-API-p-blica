@@ -23,14 +23,12 @@ Formulario HTML con al menos 3 campos (texto, email/número, select) + validacio
 Manipulación del DOM para mostrar/actualizar/eliminar datos almacenados en un arreglo de objetos.
 Implementación de funciones modulares y reutilizables (por ej: renderizarLista, validarEntrada, agregarItem).
 Uso de buenas prácticas de seguridad: evitar innerHTML peligroso, usar textContent o createElement, escapar datos dinámicos.
-
 Ahora veamos que puedes hacer, sorpréndeme.
 
 Necesito una misma persona no pueda hacer más de una reserva de paquetes el mismo día, y si lo hace este diga que no se puede porque ya tiene reserva ese día.
 Para poder saber si ya tiene reserva para ese día ,en los datos de reserva este debe agregar el Rut.
 
 necesito que en la selección de paquetes en el cuadro llamado “tu selección”, solo se pueda agregar solo uno.
-
 Ahora necesito que, en el recuadro de tu selección, abajo de los paquetes de compra aparezca un registro o inventario que deje claro que ese día ya alguien hizo una reserva especifica mostrando la fecha de reserva. y nombre parcial de la persona que hizo esta reserva sin mostrar su identidad. por ejemplo, si Christopher Tapia hizo la reserva que aparezca Ch"#$"#$ " (nombre) T"#$(apellido).
 
 Actúa como experto React o ingeniero en React. 
@@ -40,15 +38,12 @@ Quiero que abajo del  nombre de los destinos turisticas de mi pagina web aparezc
 Me explico mejor, en ese elemento react creado , tendra que aparecer el clima de hasta 3 dias  hacia adelante, por ejemplo si compro la promocion un dia lunes, me deberia aparecer el clima del dia lunes, martes y miercoles.
 Obviamente para hacer eso, es obligatorio conectarce con una Api que sea capaz de monitoriar el tiempo de los destinos turisticos que promociona la web.
 
-esta bien pero necesito que sea mas claro
-
+Esta bien pero necesito que sea mas claro
 React + Hooks
 useState, useEffect, componentes funcionales. Creación con npx create-react-app o Vite.
-
 CRUD + Local Storage
 Agregar, editar, eliminar elementos. Persistencia automática, validación de integridad.
-
 Consumo API
 Fetch o Axios. Manejo de errores, loading states, sugerencias de IA para resiliencia.
+Necesito todo mas claro y recuerda que me debe aparecer el clima de los destinos tres dias a futuro.
 
-necesito todo mas claro y recuerda que me debe aparecer el clima de los destinos tres dias a futuro, condando el mismo dia de la compra de paquetes de viaje.
